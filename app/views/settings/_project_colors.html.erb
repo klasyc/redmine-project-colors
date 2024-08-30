@@ -1,0 +1,10 @@
+<div class="tabular settings">
+	<p>
+		<%= setting_label(:color_field_id) %>
+		<%= number_field_tag('settings[color_field_id]', @settings['color_field_id']) %>
+	</p>
+	<p>
+		<%= setting_label(:color_assignments) %>
+		<%= text_area_tag('settings[color_assignments]', @settings['color_assignments']) %>
+	</p>
+</div>

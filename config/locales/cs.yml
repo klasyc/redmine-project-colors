@@ -1,0 +1,3 @@
+cs:
+  setting_color_field_id: "ID vlastního pole (klíč/hodnota), kde je uložena barva projektu"
+  setting_color_assignments: "Přiřazení barev (value_id1: #html_color\\n value_id2: #another_html_color)"
