@@ -22,7 +22,7 @@ module ProjectColors::ApplicationHelperPatch
         # Get project color:
         style = ''
         if !color_field_id.nil? && color_field_id =~ /\A\d+\z/
-          project_state = Integer(CustomValue.where(customized_type: 'Project', customized_id: project.id, custom_field_id: color_field_id).first.value) rescue -1
+          project_state = Integer(CustomValue.where(customized_type: 'Project', customized_id: project.id, custom_field_id: color_field_id).first.value) rescue nil
           if !project_state.nil? && !color_map[project_state].nil?
             style = "color: #{color_map[project_state]};"
           end
