@@ -19,3 +19,4 @@ end
 
 require 'redmine_project_colors'
 require 'project_colors/projects_helper_patch'
+require 'project_colors/application_helper_patch'
